@@ -1,0 +1,28 @@
+<%- include("./partials/header") -%>
+<ul>
+<% results.forEach(result => { %>
+    <table class="table">
+        <tr>
+            <td class="one">
+                <form action="list/delete" method="post">
+                    <button type="submit" name="id" value="<%= result._id %>"><i class="fa fa-trash fa-2x bin " aria-hidden="true"></i></button>
+                </form>
+            </td>
+            <td class="two">
+                <form action="list/<%= result.name %>" method="get">
+                    <input type="hidden" name="list" value="<%= result._id %>" />
+                    <button type="submit" name="id" value="<%= result._id %>"><%= result.name %></button>
+                </form>
+            </td>
+        </tr>
+    </table>
+<% }) %>
+</ul>
+<%- include("./partials/footer") -%>
+
+
+
+
+
+
+

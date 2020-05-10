@@ -1,0 +1,27 @@
+<%- include("./partials/header") -%>
+    <div class="box">
+        <h1 class = "heading"><%= day %></h1>
+        <h3 class = "heading"><%= listTitle %></h3>
+        <ul>
+            
+            <% items.forEach(item => { %>
+                <form method = "POST" action="/list/del"> 
+                <div class="item">
+                    <input type="hidden" name="listName" value = "<%= listTitle %>">
+                    <button type="submit" name="id" value = "<%= item._id %>" ><i class="fa fa-trash fa-2x bin" aria-hidden="true"></i></button>
+                    <input type="checkbox"  name="check"  value="<%= listTitle %>" class="check" />
+                    <li contenteditable="true"> <%= item.name %> </li>   
+                </div>
+                </form>
+            <% }) %>
+            
+            <li>
+                <form action="/list/add", method="post">
+                    <input type="text" name="newItem" placeholder="Add a new task" " >
+                    <button type = "submit" class="add" name="listname" value=<%= listTitle %>> +</button>
+                </form>
+            </li>
+        </ul>
+    </div>
+    
+<%- include("./partials/footer") -%>

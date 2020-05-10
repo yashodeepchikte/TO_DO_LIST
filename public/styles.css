@@ -1,0 +1,156 @@
+body{
+    background-color: #222831;
+    min-height: 1000px;
+    font-family: 'helvetica neue';
+  }
+  .box {
+    max-width: 400px;
+    margin: 50px auto;
+    background: #162447;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+  }
+.heading{
+    
+    color:#f0f0f0;
+    text-align: center;
+}
+.container{
+    width: 34%;
+    margin:auto
+}
+
+li{
+    list-style-type: none;
+    margin:0;
+    padding:20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #f0ece2;
+}
+
+.item{
+    min-height:70px;
+    display:flex;
+    align-items: center;
+    border-bottom: 1px solid #F1F1F1;
+}
+.item:last-child {
+    border-bottom: 0;
+  }
+input:checked+li {
+    text-decoration: line-through;
+    text-decoration-color: #A683E3;
+    
+    color:#69779b;
+    
+  }
+
+
+
+form {
+    text-align: center;
+    margin-left: 20px;
+  }
+
+  .add {
+    min-height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border-color: transparent;
+    background-color: #A683E3;
+    color: #fff;
+    font-size: 30px;
+    padding-bottom: 6px;
+    border-width: 0;
+  }
+  button{
+      background-color: transparent;
+      background-color: Transparent;
+      background-repeat:no-repeat;
+      border: none;
+      color:white;
+      cursor:pointer;
+      overflow: hidden;
+      font-size:20px;
+  }
+
+  input[type="text"]:focus {
+    outline: none;
+    background-color:#142850 ;
+    margin:10px auto;
+    box-shadow: inset 0 -3px 0 0 #A683E3;
+  }
+
+  input[type="checkbox"]{
+    margin: 20px;
+    transform: scale(2.5);
+    background:#ff0000;
+}
+
+  ::placeholder {
+    color: grey;
+    opacity: 1;
+  }
+
+  input[type="text"] {
+    text-align: center;
+    color:#f0f0f0;
+    height: 60px;
+    top: 10px;
+    border: none;
+    background: transparent;
+    font-size: 20px;
+    font-weight: 200;
+    width: 313px;
+  }
+
+  .list_box{
+    max-width: 200px;
+    margin: 50px auto;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    
+  }
+  table{
+    
+    align-items: center;
+
+  }
+  
+
+
+
+  .bin{
+    color:white;
+    size: 200px;
+  }
+  
+  .check{
+    
+  }
+
+  .heading{
+    
+  }
+  .table{
+    margin-top: 20px;
+    
+    margin:auto;
+    align-items: center;
+  }
+
+  td{
+    color:white;
+    align-items: centers;
+    border: solid 3px white;
+    width:600px
+  }
+  .one{
+    width:150px;
+  }
+  ul{
+    margin:50px;
+    
+  }
