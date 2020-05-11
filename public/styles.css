@@ -4,7 +4,7 @@ body{
     font-family: 'helvetica neue';
   }
   .box {
-    max-width: 400px;
+    
     margin: 50px auto;
     background: #162447;
     border-radius: 5px;
@@ -16,7 +16,7 @@ body{
     text-align: center;
 }
 .container{
-    width: 34%;
+    width: 50%;
     margin:auto
 }
 
@@ -102,7 +102,7 @@ form {
     background: transparent;
     font-size: 20px;
     font-weight: 200;
-    width: 313px;
+    width: 300px;
   }
 
   .list_box{
